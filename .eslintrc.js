@@ -14,4 +14,8 @@ module.exports = {
         "generated-stories-entry.js",
         "storybook-init-framework-entry.js"
     ],
+    "plugins": [
+        "html",
+        "vue"
+    ]
 }
