@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img alt="Vue logo" src="./assets/logo.png" />
     <Button />
+    <a-button type="primary" html-type="submit"> Submit </a-button>
   </div>
 </template>
 
 <script>
-import Button from "./components/Button/Button.vue"
+import Button from "./components/Button/Button.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Button
-  }
-}
+    Button,
+  },
+};
 </script>
 
 <style>
