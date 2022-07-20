@@ -6,18 +6,18 @@
 
 <script>
 export default {
-    name: "Button",
-    props:{
-      text: {
-        type: String,
-        default: "click"
-      }
-    },
-}
+  name: "Button",
+  props: {
+    text: {
+      type: String,
+      default: "click"
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
-.btn{
-    color: red;
+.btn {
+  color: red;
 }
 </style>
