@@ -23,4 +23,5 @@ Primary.args = {   //将args中的参数作为默认参数传回到vue组件中
 export const Secondary = Template.bind({});   //参数的个数任意
 Secondary.args = {
   label: "SecondaryButton",
+  text:'Secondary'
 };
