@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="btn">{{ text }}</button>
+    <button class="btn">{{ label }}</button>
   </div>
 </template>
 
@@ -8,9 +8,9 @@
 export default {
   name: "Button",
   props: {
-    text: {
+    label: {
       type: String,
-      default: "click"
+      default:'button'
     }
   }
 };
