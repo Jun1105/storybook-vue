@@ -2,7 +2,6 @@ import Vue from "vue";
 import ant, { Button } from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
 import { action, actions } from '@storybook/addon-actions'
-// import antButtonDocumentation from './antButton.stories.mdx'
 import antButtonDocumentation from './antButton.mdx'
 Vue.use(ant)
 
