@@ -8,35 +8,13 @@ export default {
     docs: {
       page: ButtonDoc,
     },
-  },
-  // argTypes: {
-  //   label: {
-  //     description: 'overwritten description',
-  //     table: {
-  //       type: {
-  //         summary: 'something short',
-  //         detail: 'something really really long',
-  //       },
-  //       defaultValue: { summary: 'Hello' },
-  //     },
-  //     control: {
-  //       type: null,
-  //     },
-  //   },
-  // },
-  // parameters: {
-  //   docs: {
-  //     description: {
-  //       component: 'Some component _markdown_',
-  //     },
-  //   },
-  // },
+  }
 };
 
 //这是vue 2.x的写法
 const Template = (args, { argTypes }) => ({
   components: { MyButton },
-  // props: Object.keys(argTypes),
+  props: Object.keys(argTypes),
   template: '<MyButton v-bind="$props" v-on="$props" />',
 });
 //通过Template.bind({})实现模板的复用以减少代码量
@@ -50,6 +28,10 @@ Primary.args = {   //将args中的参数作为默认参数传回到vue组件中
 Primary.argTypes = {
   label: {
     description: 'overwritten description',
+    type: {
+      name: 'string',
+      required: true
+    },
     table: {
       type: {
         summary: 'something short',

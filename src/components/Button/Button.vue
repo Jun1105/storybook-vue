@@ -10,9 +10,18 @@ export default {
   props: {
     label: {
       type: String,
-      default:'button'
-    }
-  }
+      default: "button",
+    },
+    Name: {
+      type: String,
+    },
+    primary: {
+      type: Boolean,
+    },
+    size: {
+      type: String,
+    },
+  },
 };
 </script>
 
